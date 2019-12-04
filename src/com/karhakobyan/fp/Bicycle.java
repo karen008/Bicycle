@@ -8,7 +8,7 @@ public class Bicycle {
     private String type;
     private int size;
     private int speed = 0;
-    private int wheelsCount;
+    private int wheelsCount = 2;
     private String color;
     private boolean hasBottlePlace;
     private boolean hasBreak = true;
@@ -17,10 +17,6 @@ public class Bicycle {
     private static final int MAX_SPEED = 70;
 
 
-    public Bicycle() {
-
-        wheelsCount = 2;
-    }
 
     public void set_prop(){
         Scanner set = new Scanner(System.in);
