@@ -16,7 +16,7 @@ public class Main {
         accel_num = Integer.parseInt(set.nextLine());
 
         System.out.println("How much break");
-        break_num = Integer.parseInt(set.nextLine());
+        break_num = set.nextInt();
 
         for (int i = 0; i < accel_num; i++) {
             bicycle.accelerate();
@@ -24,7 +24,6 @@ public class Main {
         for (int i = 0; i < break_num; i++) {
             bicycle.pressBreak();
         }
-
         bicycle.stop();
     }
 }

@@ -16,8 +16,6 @@ public class Bicycle {
     private float price;
     private static final int MAX_SPEED = 70;
 
-
-
     public void set_prop(){
         Scanner set = new Scanner(System.in);
         System.out.println("Enter name");
@@ -26,15 +24,19 @@ public class Bicycle {
         System.out.println("Enter type");
         type = set.nextLine();
 
-        System.out.println("Enter size");
-        size = Integer.parseInt(set.nextLine());
-
         System.out.println("Enter color");
         color = set.nextLine();
+
+        System.out.println("Enter size");
+        size = set.nextInt();
+
+        System.out.println("Is there break (true/false)");
+        hasBreak = set.nextBoolean();
 
         System.out.println("Name is: " + name);
         System.out.println("Type is: " + type);
         System.out.println("Size is: " + size);
+        System.out.println("Color is: " + color);
 
     }
 
